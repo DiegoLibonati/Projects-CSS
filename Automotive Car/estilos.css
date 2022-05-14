@@ -1,0 +1,284 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-size: 10px;
+    list-style: none;
+    overflow-x: hidden;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+.header_container{
+    display: fixed;
+    position: absolute;
+    width: 100%;
+    background: transparent;
+}
+
+    .header_container-logo{
+        background-color: rgba(0, 0, 0, 0.695);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 10rem;
+        width: 100%;
+    }
+
+        .header_container-logo h2{
+            display: flex;
+            align-items: center;
+            font-size: 4rem;
+            margin-left: 1rem;
+            color: #fff;
+        }
+
+        .header_container-logo h2 i{
+            font-size: 4rem;
+            margin-right: .5rem;
+            color: #fff;
+        }
+
+        #btnOpen{
+            margin-right: 1rem;
+            background:none;
+            border: none;
+        }
+
+            #btnOpen i{
+                font-size: 4rem;
+                color: #fff;
+            }
+
+        #btnClose{
+            display: none;
+            margin-right: 1rem;
+            background:none;
+            border: none;
+        }
+
+            #btnClose i{
+                font-size: 4rem;
+                color: #fff;
+            }
+
+
+    .header_container-nav{
+        background-color: rgba(0, 0, 0, 0.695);
+        width: 100%;
+        height: 23rem;
+        transform: translateY(-200%);
+        transition: transform 1s;
+    }
+
+        .header_container_nav_list{
+            display: flex;
+            flex-flow: column wrap;
+            align-items: flex-start;
+            justify-content: space-evenly;
+            width: 100%;
+            height: 23rem;
+        }
+
+            .header_container_nav_list li{
+                margin-left: 1rem;
+            }
+
+            .header_container_nav_list li a{
+                font-size: 3rem;
+                text-decoration: none;
+                color: #fff;
+            }
+
+            #specialButton{
+                display: none;
+            }
+
+    .show-nav{
+        transform: translateY(0%);
+    }
+
+    .noshow-btn{
+        display: none;
+    }
+
+
+.section_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background: url("templates/car-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+    .section_container-home{
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-flow: column nowrap;
+        height: calc(100vh - 10rem);
+        width: 80%;
+        margin-top: 10rem;
+    }
+
+        .section_container-home h1{
+            line-height: 5rem;
+            font-size: 4.3rem;
+            overflow-y: hidden;
+            color: #00c2ff;
+            margin-bottom: 2rem;
+        }
+
+        .section_container-home h2{
+            font-size: 2rem;
+            padding-right: 1rem;
+            color: #fff;
+            margin-bottom: 1rem;
+        }
+
+        .section_container-home button{
+            background-color: #00c2ff;
+            border: none;
+            padding: 2rem;
+        }
+
+            .section_container-home button a{
+                font-size: 2rem;
+                text-decoration: none;
+                color: #fff;
+            }
+
+.footer_section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 25rem;
+    width: 100%;
+    background: #000;
+}
+
+    .footer_section-center{
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        flex-flow: column wrap;
+        height: 25rem;
+        width: 60%;
+    }
+
+            .footer_section-div h3{ 
+                font-size: 1.5rem;
+                margin-bottom: 1rem;
+                color: #00c2ff;
+            }
+
+            .footer_section-div p{
+                font-size: 2rem;
+                color: #fff;
+            }
+
+@media screen and (min-width: 1024px) {
+    .header_container{
+        display: flex;
+        flex-flow: row wrap;
+    }
+    
+        .header_container-logo{
+            background: none;
+            align-items: center;
+            justify-content: center;
+            width: 40%;
+        }
+    
+            .header_container-logo h2{
+                display: flex;
+                align-items: center;
+                font-size: 5rem;
+                margin-left: 1rem;
+                color: #fff;
+            }
+    
+            .header_container-logo h2 i{
+                font-size: 5rem;
+                margin-right: 2rem;
+                color: #fff;
+            }
+    
+            #btnOpen{
+                display: none;
+            }
+    
+            #btnClose{
+                display: none;
+            }
+    
+    
+        .header_container-nav{
+            background: none;
+            width: 50%;
+            height: 10rem;
+            transform: translateY(0%);
+            transition: transform 0s;
+        }
+    
+            .header_container_nav_list{
+                display: flex;
+                flex-flow: row wrap;
+                align-items: center;
+                justify-content: flex-start;
+                width: 100%;
+                height: 10rem;
+            }
+    
+                .header_container_nav_list li{
+                    margin-left: 5rem;
+                }
+    
+                .header_container_nav_list li a{
+                    font-size: 2rem;
+                    text-decoration: none;
+                    color: #fff;
+                }
+    
+                #specialButton{
+                    display: block;
+                    background: #00c2ff;
+                    padding: 2rem;
+                    cursor: pointer;
+                }
+
+        .section_container-home{
+            width: 93%;
+        }
+
+            .section_container-home h1{
+                font-size: 6.3rem;
+            }
+
+            .section_container-home h2{
+                font-size: 4rem;
+            }
+
+
+        .footer_section-center{
+            width: 100%;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .footer_section-div h3{ 
+            font-size: 2rem;
+        }
+}
