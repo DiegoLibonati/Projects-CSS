@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-size: 10px;
     overflow-x: hidden;
+    font-family: 'Titillium Web', sans-serif;
 }
 
 img{
@@ -72,6 +73,10 @@ body{
             .nav_container_nav button i{
                 font-size: 2.5rem;
                 color: #fff;
+            }
+
+            .nav_container_nav button i:hover, .nav_container_logo button i:hover{
+                color:#803BEC;
             }
 
     .nav_container_nav_opacity{
@@ -175,7 +180,6 @@ body{
 
             .home_container_text_h2 h2{
                 font-size: 3rem;
-                font-family: 'Titillium Web', sans-serif;
                 line-height: 3.5rem;
                 overflow-y: hidden;
                 border-bottom: .3rem solid #803BEC;
@@ -187,7 +191,6 @@ body{
 
             .home_container_text_h3 h3{
                 font-size: 2rem;
-                font-family: 'Titillium Web', sans-serif;
                 overflow-y: hidden;
             }
 
@@ -206,13 +209,11 @@ body{
 @media only screen and (min-width: 768px){
 
     .home_container{
-        width: 100%;
         flex-flow: row wrap;
         height: 52rem;
     }
 
         .home_container_text{
-            display: flex;
             align-items: flex-start;
             position: absolute;
             z-index: 10;
@@ -230,7 +231,6 @@ body{
                 .home_container_text_h2 h2{
                     font-size: 4rem;
                     line-height: 4rem;
-                    overflow-y: hidden;
                     width: 50%;
                     padding-bottom: 1rem;
                     padding-top: 5rem;
@@ -247,7 +247,6 @@ body{
                 .home_container_text_h3 h3{
                     text-align: right;
                     width: 40%;
-                    font-size: 2rem;
                 }
 
         .home_container_img{
@@ -257,11 +256,7 @@ body{
             height: 52rem;
         }
 
-            .home_container_img img{
-                width: 100%;
-                height: auto;
-                object-fit: cover;
-            }
+
 
 }
 
@@ -442,7 +437,7 @@ body{
                 color: #fff;
                 font-size: 13rem;
                 line-height: 13rem;
-                font-family: 'Titillium Web', sans-serif;
+ 
                 overflow-y: hidden;
             }
 
@@ -459,33 +454,38 @@ body{
                 flex-flow: column;
                 align-items: center;
                 justify-content: space-evenly;
-                margin-top: 2rem;
-                width: 95%;
-                height: 30rem;
+                width: 100%;
+                height: 50rem;
                 background: #E5E5E5;
             }
         
                 .app_container_center_information h2{
                     width: 80%;
-                    font-size: 3.5rem;
-                    font-family: 'Titillium Web', sans-serif;
+                    font-size: 5rem;
+     
+                    text-align: center;
                 }
         
                 .app_container_center_information button{
-                    width: 60%;
-                    height: 4rem;
-                    font-family: 'Titillium Web', sans-serif;
+                    width: 80%;
+                    height: 6rem;
+     
                     font-size: 1.5rem;
                     border-radius: 5rem;
                     border: none;
                     color: #fff;
                     background: #803BEC;
                 }
+
+                .app_container_center_information button:hover{
+                    background: #7f3becb9;
+                }
         
                 .app_container_center_information p{
                     width: 80%;
-                    font-family: 'Titillium Web', sans-serif;
+     
                     font-size: 2rem;
+                    text-align: center;
                 }
 
             .app_container_center_img{
@@ -536,7 +536,7 @@ body{
                 color: #fff;
                 font-size: 13rem;
                 line-height: 13rem;
-                font-family: 'Titillium Web', sans-serif;
+ 
                 overflow-y: hidden;
             }
     
@@ -554,23 +554,22 @@ body{
                 flex-flow: column;
                 align-items: center;
                 justify-content: space-evenly;
-                margin-top: 2rem;
-                width: 90%;
-                height: 30rem;
+                width: 100%;
+                height: 48rem;
                 background: #E5E5E5;
             }
     
                 .app_container_center_information h2{
                     width: 80%;
-                    font-size: 3.5rem;
-                    font-family: 'Titillium Web', sans-serif;
+                    font-size: 7rem;
+     
                 }
     
                 .app_container_center_information button{
                     width: 60%;
-                    height: 4rem;
-                    font-family: 'Titillium Web', sans-serif;
-                    font-size: 1.5rem;
+                    height: 6rem;
+     
+                    font-size: 2.5rem;
                     border-radius: 5rem;
                     border: none;
                     color: #fff;
@@ -580,7 +579,7 @@ body{
     
                 .app_container_center_information p{
                     width: 80%;
-                    font-family: 'Titillium Web', sans-serif;
+     
                     font-size: 2rem;
                 }
     
@@ -598,43 +597,12 @@ body{
 
 }
 
-@media only screen and (min-width: 1530px){
-
-    .app_container_title{
-        width: 60rem;
-        height: 80rem;
-    }
-
-    .app_container_center{
-        height: 80rem;
-        width: 70rem;
-    }
-
-    .app_container_center_information{
-        width: 50rem;
-        height: 25rem;
-    }
-
-    .app_container_center_img{
-        width: 55rem;
-        height: 41rem;
-        overflow-y: hidden;
-    }
-
-        .app_container_center_img img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
-
-}
-
 .h1_container{
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 70rem;
+    height: 50rem;
     background: #803BEC;
 }
 
@@ -647,15 +615,48 @@ body{
         height: 90%;
     }
 
-        .h1_container_title h1{
+        .h1_container_title h1 span{
             display: flex;
             align-items: center;
             height: 100%;
             color: #fff;
-            font-size: 12rem;
+            font-size: 6rem;
             line-height: 11rem;
             font-family: 'Titillium Web', sans-serif;
         }
+
+
+@media only screen and (min-width: 768px){
+
+    .h1_container_title h1 span{
+        line-height: 15rem;
+        height: 15rem;
+        font-size: 10rem;
+        line-height: 11rem;
+        overflow-y: hidden;
+    }
+
+}
+
+@media only screen and (min-width: 1024px){
+
+    .h1_container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 80rem;
+        background: #803BEC;
+    }
+        .h1_container_title h1 span{
+            line-height: 15rem;
+            height: 20rem;
+            font-size: 15rem;
+            line-height: 11rem;
+            overflow-y: hidden;
+        }
+
+}
 
 .galery_container{
     display: flex;
@@ -690,6 +691,11 @@ body{
             object-fit: cover;
             margin-top: 2rem;
             cursor: pointer;
+        }
+
+        .galery_container_information img:hover{
+            background: #000;
+            opacity: .5;
         }
 
     .galery_container_learn_more{
@@ -734,12 +740,16 @@ body{
             cursor: pointer;
         }
 
+        .galery_container_learn_more button:hover{
+            background: #7f3becb9;
+        }
+
 .galery_slider{
     display: none;
     flex-flow: column wrap;
     align-items: center;
     justify-content: center;
-    position: absolute;
+    position: relative;
     background: #000;
     height: 100vh;
     width: 100%;
@@ -961,7 +971,7 @@ body{
             .galery_container_learn_more h2{
                 align-self: center;
                 width: 80%;
-                font-family: 'Titillium Web', sans-serif;
+ 
                 font-size: 3rem;
                 line-height: 3rem;
                 overflow-y: hidden;
@@ -969,7 +979,7 @@ body{
 
             .galery_container_learn_more p{
                 align-self: center;
-                font-family: 'Titillium Web', sans-serif;
+ 
                 font-size: 2rem;
                 width: 80%;
             }
@@ -981,7 +991,7 @@ body{
                 background: #803BEC;
                 color: #fff;
                 border-radius: 2rem;
-                font-family: 'Titillium Web', sans-serif;
+ 
                 border: none;
                 font-size: 1.7rem;
             }
@@ -1022,3 +1032,551 @@ body{
 }
 
 
+.review_section{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: relative;
+    width: 100%;
+    height: 60rem;
+}
+
+    .review_section button{
+        width: 5rem;
+        font-size: 3rem;
+        border-radius: 100%;
+        height: 5rem;
+        border: none;
+        background: #803BEC;
+        color: #fff;
+    }
+
+        .review_section button{
+            cursor: pointer;
+        }
+
+        .review_section button:hover{
+            background: #ffffff;
+            color: rgb(0, 0, 0);
+            border: .1rem solid #000;
+        }
+
+        .review_section_reviews{
+            display: flex;
+            align-items: center;
+            position: relative;
+            width: 60%;
+            height: 50rem;
+        }
+
+            .review{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-flow: column wrap;
+                position: absolute;
+                height: 100%;
+                transform: translateX(200%);
+                transition: transform 1s;
+            }
+
+                .review p{
+                    font-size: 1.5rem;
+                    text-align: center;
+     
+                }
+
+                .review img{
+                    border-radius: 50%;
+                    border: .5rem solid #803BEC;
+                    height: 15rem;
+                    width: 15rem;
+                }
+
+                .review h2{
+                    font-size: 2.5rem;
+     
+                }
+
+            .review-show{
+                transform: translateX(0%);
+                transition: transform 1s;
+            }
+
+@media only screen and (min-width: 768px){
+
+    .review p{
+        font-size: 2rem;
+    }
+
+    .review h2{
+        font-size: 3rem;
+    }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    .review_section{
+        justify-content: center;
+    }
+
+}
+
+.staff_container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-flow: column wrap;
+    width: 100%;
+    height: 165rem;
+    background: #000;
+}
+
+    .staff_container_title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10rem;
+        width: 100%;
+    }
+
+        .staff_container_title h2{
+            font-size: 5rem;
+            color: #fff;
+            font-family: 'Titillium Web', sans-serif;
+        }
+
+    .staff_container_information{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-flow: column wrap;
+        width: 100%;
+        height: 155rem;
+    }
+
+        .staff_profile{
+            width: 35rem;
+            height: 50rem;
+        }
+
+            .staff_profile img{
+                width: 100%;
+                height: 35rem;
+                object-fit: cover;
+            }
+
+            .staff_profile h2{
+                width: 100%;
+                height: 3.33rem;
+ 
+                color: #fff;
+                font-size: 2rem;
+            }
+
+            .staff_profile p{
+                width: 100%;
+                color: #fff;
+                height: 3.33rem;
+                font-size: 1.5rem;
+ 
+            }
+
+            .staff_profile_networks{
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+                flex-flow: row wrap;
+                height: 3.33rem;
+                width: 100%;
+            }
+
+                .staff_profile_networks i{
+                    font-size: 1.8rem;
+                    color: #803BEC;
+                }
+
+    
+
+@media only screen and (min-width: 768px){
+
+    .staff_container{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-flow: column wrap;
+        width: 100%;
+        height: 100rem;
+        background: #000;
+    }
+    
+        .staff_container_title{
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            width: 90%;
+            height: 10rem;
+        }
+    
+            .staff_container_title h2{
+                color: #fff;
+                font-size: 6.5rem;
+            }  
+    
+        .staff_container_information{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            position: relative;
+            flex-flow:  row wrap;
+            width: 90%;
+            height: 80rem;
+        }
+    
+            .staff_profile{
+                width: 20rem;
+                height: 45rem;
+            }
+    
+                .staff_profile img{
+                    width: 100%;
+                    height: 25rem;
+                    object-fit: cover;
+                }
+    
+                .staff_profile h2{
+                    width: 100%;
+                    height: 4.33rem;
+     
+                    color: #fff;
+                    font-size: 2.5rem;
+                }
+    
+                .staff_profile p{
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    color: #fff;
+                    height: 6.33rem;
+                    font-size: 2rem;
+     
+                }
+    
+                .staff_profile_networks{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-evenly;
+                    flex-flow: row wrap;
+                    height: 5.33rem;
+                    width: 100%;
+                }
+    
+                    .staff_profile_networks i{
+                        font-size: 1.8rem;
+                        color: #803BEC;
+                    }
+        
+            .boxStaffOne{
+                align-self: flex-start;
+            }
+    
+            .boxStaffTwo{
+                align-self: center;
+            }
+    
+            .boxStaffTr{
+                align-self: flex-end;
+            }
+
+}
+
+@media only screen and (min-width: 1024px) {
+    
+    .staff_container_title{
+        width: 92rem;
+    }
+
+        .staff_container_title h2{
+
+        }  
+
+    .staff_container_information{
+        width: 92rem;
+    }
+
+    .staff_profile{
+        width: 30rem;
+        height: 50rem;
+    }
+
+        .staff_profile img{
+            width: 100%;
+            height: 35rem;
+            object-fit: cover;
+        }
+
+        .staff_profile h2{
+            display: flex;
+            align-items: center;
+            height: 4.33rem;
+            font-size: 2.5rem;
+        }
+
+        .staff_profile p{
+            height: 3.33rem;
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .staff_profile_networks{
+            height: 3.33rem;
+        }
+
+}
+
+.caracteristicas_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    width: 100%;
+    height: 160rem;
+    background-color: #803BEC;
+}
+
+    .caracteristicas_container_title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-flow: column wrap;
+        width: 90%;
+        height: 20rem;
+    }
+
+        .caracteristicas_container_title h3{
+            font-size: 2.5rem;
+            text-align: center;
+            color: #fff;
+            letter-spacing: .5rem;
+            font-family: 'Titillium Web', sans-serif;
+        }
+
+        .caracteristicas_container_title h2{
+            font-size: 3rem;
+            text-align: center;
+            color: #fff;
+            font-family: 'Titillium Web', sans-serif;
+        }
+
+    .caracteristicas_container_information{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-flow: column wrap;
+        width: 90%;
+        height: 130rem;
+    }
+
+        .caracteristica_container{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-flow: column wrap;
+            width: 100%;
+            height: 40rem;
+            background: #7F51D6;
+        }
+
+            .caracteristica_container i {
+                color: #fff;
+                font-size: 5rem;
+            }
+
+            .caracteristica_container h2{
+                font-size: 3rem;
+                color: #fff;
+ 
+            }
+
+            .caracteristica_container p{
+                width: 90%;
+                text-align: center;
+                font-size: 2rem;
+                color: #fff;
+ 
+            }
+
+            .caracteristica_container button{
+                background: none;
+                border: none;
+                border-bottom: .1rem solid #fff;
+                color: #fff;
+                font-size: 1.5rem;
+                padding-bottom: .5rem;
+            }
+
+
+@media only screen and (min-width: 1024px) {
+    
+    .caracteristicas_container{
+        height: 80rem;
+    }
+
+        .caracteristicas_container_title{
+            height: 30rem;
+        }
+
+            .caracteristicas_container_title h3{
+                font-size: 3rem;
+            }
+
+            .caracteristicas_container_title h2{
+                font-size: 6rem;
+            }
+
+
+            .caracteristicas_container_information{
+                flex-flow: row wrap;
+                height: 40rem;
+            }
+        
+                .caracteristica_container{
+                    width: 30rem;
+                }
+        
+}
+
+.contact_container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    width: 100%;
+    height: 60rem;
+    background: #1A1A1A;
+}
+
+    .contact_container_title{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 10rem;
+        width: 80%;
+    }
+
+        .contact_container_title h2{
+            text-align: center;
+            font-size: 3rem;
+            font-family: 'Titillium Web', sans-serif;
+            color: #fff;
+        }
+
+    .contact_container_form{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-flow: column wrap;
+        width: 90%;
+        height: 45rem;
+    }
+
+        .contact_container_form_header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-flow: column wrap;
+            width: 100%;
+            height: 15rem;
+        }
+
+            .contact_container_form_header input{
+                width: 100%;
+                height: 6rem;
+                background: #333333;
+                border: none;
+                outline: none;
+                color: #fff;
+                border-bottom: .1rem solid #fff;
+                padding-left: 1rem;
+                font-size: 2rem;
+
+            }
+
+        .contact_container_form_down{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-flow: column wrap;
+            width: 100%;
+            height: 20rem;
+        }
+
+            .contact_container_form_down textarea{
+                resize: none;
+                width: 100%;
+                height: 10rem;
+                background: #333333;
+                border: none;
+                outline: none;
+                color: #fff;
+                border-bottom: .1rem solid #fff;
+                padding-left: 1rem;
+                padding-top: 1rem;
+                font-size: 2rem;
+ 
+            }
+
+            .contact_container_form_down button{
+
+                background-color: #803BEC;
+                border: none;
+                color: #fff;
+                font-size: 2rem;
+                width: 50%;
+                height: 4rem;
+                border-radius: 2rem;
+ 
+
+            }
+
+
+
+@media only screen and (min-width:768px){
+    
+    .contact_container_title{
+        height: 12rem;
+    }
+
+        .contact_container_title h2{
+            font-size: 5rem;
+        }
+
+    .contact_container_form{
+        width: 70rem;
+    }
+
+    .contact_container_form_header{
+        flex-flow: row wrap;
+        height: 10rem;
+    }
+
+        .contact_container_form_header input{
+            width: 48%;
+
+        }
+
+    .contact_container_form_down{
+            height: 30rem;
+        }
+
+        .contact_container_form_down textarea{
+            height: 20rem;
+        }
+
+    
+        .contact_container_form_down button{
+            width: 20rem;
+            height: 5rem;
+        }
+}

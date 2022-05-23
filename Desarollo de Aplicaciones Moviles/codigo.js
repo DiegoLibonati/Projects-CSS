@@ -71,11 +71,11 @@ const closeGalery = () => {
 
 galerySliderCloseBtn.addEventListener("click", closeGalery);
 
-const getIPositionInImgArray = () => {
+const getIPositionInImgArray = (array, imgDefault) => {
 
-    for (let i = 0; i < arrayImgs.length; i++){
+    for (let i = 0; i < array.length; i++){
 
-        if (arrayImgs[i].src === galerySliderImgDefault.src){
+        if (array[i].src === imgDefault.src){
             return i;
         }
 
@@ -83,7 +83,7 @@ const getIPositionInImgArray = () => {
 
 }
 
-const decreaseValueOfI = (i, array) => {
+const decreaseValueOfIInGalery = (i, array) => {
 
     if (i <= 0){
         i = array.length - 1;
@@ -97,7 +97,7 @@ const decreaseValueOfI = (i, array) => {
 
 }
 
-const increaseValueOfI = (i, array) => {
+const increaseValueOfIInGalery = (i, array) => {
 
     if (i >= array.length - 1){
         i = 0;
@@ -113,20 +113,116 @@ const increaseValueOfI = (i, array) => {
 
 const showPrevImg = () => {
 
-    let iPositionInArray = getIPositionInImgArray();
+    let iPositionInArray = getIPositionInImgArray(arrayImgs, galerySliderImgDefault);
 
-    decreaseValueOfI(iPositionInArray, arrayImgs);
+    decreaseValueOfIInGalery(iPositionInArray, arrayImgs);
 
 }
 
 const showNextImg = () => {
 
-    let iPositionInArray = getIPositionInImgArray();
+    let iPositionInArray = getIPositionInImgArray(arrayImgs, galerySliderImgDefault);
 
-    increaseValueOfI(iPositionInArray, arrayImgs);
+    increaseValueOfIInGalery(iPositionInArray, arrayImgs);
 
 }
 
 
 prevBtnSlider.addEventListener("click", showPrevImg);
 nextBtnSlider.addEventListener("click", showNextImg);
+
+
+// Review Section
+const btnPrevReview = document.getElementById("prevReview");
+const btnNextReview = document.getElementById("nextReview");
+const allReviews = document.querySelectorAll(".review");
+let prevBtnReview = false;
+let nextBtnReview = false;
+
+const getIPositioninReviewArray = () =>{
+
+    for(let i = 0; i < allReviews.length; i++){
+        if (allReviews[i].classList.contains("review-show")){
+            allReviews[i].classList.remove("review-show");
+
+            if (prevBtnReview == true && nextBtnReview == false){
+
+                if (i <= 0){
+                    allReviews[i].style.transform = "translateX(-200%)"
+                } else {
+                    allReviews[i].style.transform = "translateX(200%)"
+                }
+
+                prevBtnReview = false;
+
+            }
+
+            if (prevBtnReview == false && nextBtnReview == true){
+
+                if (i >= allReviews.length - 1){
+                    allReviews[i].style.transform = "translateX(200%)"
+                } else {
+                    allReviews[i].style.transform = "translateX(-200%)"
+                }
+
+                nextBtnReview = false;
+
+            }
+
+            return i;
+        }
+    }
+
+}
+
+const increaseValueOfIInReview = (i, array) => {
+
+    if (i >= array.length - 1){
+        i = 0
+        array[i].classList.add("review-show");
+        array[i].style.transform = "translateX(0%)";
+    } else {
+        i++
+        array[i].classList.add("review-show");
+        array[i].style.transform = "translateX(0%)";
+    }
+
+}
+
+const decreaseValueOfIInReview = (i, array) => {
+
+    if (i <= 0){
+        i = array.length - 1
+        array[i].classList.add("review-show");
+        array[i].style.transform = "translateX(0%)";
+    } else {
+        i--
+        array[i].classList.add("review-show");
+        array[i].style.transform = "translateX(0%)";
+    }
+
+}
+
+const showPrevReview = () => {
+
+    prevBtnReview = true;
+    let iPositionInArray = getIPositioninReviewArray();
+
+    decreaseValueOfIInReview(iPositionInArray, allReviews);
+
+}
+
+btnPrevReview.addEventListener("click", showPrevReview);
+
+const showNextReview = () => {
+
+    nextBtnReview = true;
+    let iPositionInArray = getIPositioninReviewArray();
+
+    increaseValueOfIInReview(iPositionInArray, allReviews);
+
+}
+
+btnNextReview.addEventListener("click", showNextReview);
+
+
