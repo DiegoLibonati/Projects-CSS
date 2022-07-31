@@ -23,28 +23,28 @@
   <body>
     <header class="header_container">
       <div class="header_container_logo">
-        <a href="index.html">Creative Studio</a>
+        <a class="logoNav" href="index.html">Creative Studio</a>
         <i class="fa-solid fa-bars"></i>
       </div>
 
       <nav class="header_container_nav">
         <ul class="header_container_nav_list">
-          <li class="navLink">Home</li>
-          <li class="navLink">About Us</li>
-          <li class="navLink">Our Features</li>
-          <li class="navLink">Digital Studio</li>
-          <li class="navLink">Portfolio</li>
-          <li class="navLink">Contact Us</li>
+          <li><a class="navLink" href="#home">Home</a></li>
+          <li><a class="navLink" href="#aboutus">About Us</a></li>
+          <li><a class="navLink" href="#features">Our Features</a></li>
+          <li><a class="navLink" href="#digital">Digital Studio</a></li>
+          <li><a class="navLink" href="#portfolio">Portfolio</a></li>
+          <li><a class="navLink" href="#contactus">Contact Us</a></li>
         </ul>
       </nav>
     </header>
 
     <main class="main_container">
-      <section class="home_container">
+      <section class="home_container section" id="home">
         <h1>Creative Stories</h1>
       </section>
 
-      <section class="side_section">
+      <section class="side_section section" id="aboutus">
         <article class="side_section_image">
           <img src="./templates/about us.jpg" alt="cono" loading="lazy" />
         </article>
@@ -61,7 +61,7 @@
         </article>
       </section>
 
-      <section class="side_section">
+      <section class="side_section section" id="features">
         <article class="side_section_image image_features">
           <img src="./templates/ourfeatures.jpg" alt="cono" loading="lazy" />
         </article>
@@ -79,7 +79,7 @@
         </article>
       </section>
 
-      <section class="side_section">
+      <section class="side_section section" id="digital">
         <article class="side_section_image">
           <img src="./templates/digitalstudio.jpg" alt="cono" loading="lazy" />
         </article>
@@ -103,7 +103,7 @@
         <img src="./templates/4.jpg" alt="galery" loading="lazy" />
       </section>
 
-      <section class="portfolio_container">
+      <section class="portfolio_container section" id="portfolio">
         <article class="portfolio_container_header">
           <h4>PORTFOLIO</h4>
           <h2>
@@ -141,7 +141,7 @@
         </article>
       </section>
 
-      <section class="form_section_container">
+      <section class="form_section_container section" id="contactus">
         <form class="form_container">
           <h2>Contact Us</h2>
 
@@ -159,5 +159,6 @@
     </main>
 
     <script src="navbar.js"></script>
+    <script src="scrollSections.js"></script>
   </body>
 </html>

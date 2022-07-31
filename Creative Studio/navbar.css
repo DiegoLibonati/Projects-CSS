@@ -7,6 +7,7 @@
   top: 0;
   width: 100%;
   height: 7rem;
+  transition: backdrop-filter 1s;
 }
 
 .header_container_logo {
@@ -24,11 +25,13 @@
   text-decoration: none;
   font-weight: 900;
   color: #fff;
+  transition: color 1s;
 }
 
-.header_container_logo i {
+.fa-bars {
   font-size: 3rem;
   color: #fff;
+  transition: color 1s;
 }
 
 .header_container_nav {
@@ -65,6 +68,8 @@
   color: #fff;
   font-size: 2rem;
   cursor: pointer;
+  transition: color 1s;
+  text-decoration: none;
 }
 
 .navLink::after {
@@ -74,7 +79,7 @@
   height: 0.175rem;
   left: 0;
   bottom: 0;
-  background-color: #fff;
+  background-color: var(--underline);
   transform: scale(0, 1);
   transition: transform 1s;
 }
@@ -100,8 +105,8 @@
     padding: 1;
   }
 
-  .header_container_logo i {
-    display: none;
+  .fa-bars {
+    display: none !important;
   }
 
   .header_container_nav {
